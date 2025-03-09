@@ -87,9 +87,9 @@ body {
 }
 
 .slide img {
-    width: 100px; /* Make the image width fit the screen */
-    height: 100px; /* Set the image height to 80 pixels */
-    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    width: cover; /* Make the image width fit the screen */
+    height: 80% /* Set the image height to 80 pixels */
+     /* Ensure the image covers the entire area without distortion */
 }
 
 .prev, .next {
