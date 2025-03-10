@@ -14,10 +14,6 @@ body {
     color: var(--light);
 }
 
-/* body {
-    background-color: yellow;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +26,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header and Navigation */
 .header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: rgb(117, 177, 20);
@@ -72,9 +67,7 @@ body {
     border-radius: 20px;
     border: none;
 }
-/* marque section */
 
-/* Add this to your existing CSS file */
 .image-slider {
     position: relative;
     max-width: 100%;
@@ -87,9 +80,9 @@ body {
 }
 
 .slide img {
-    width: cover; /* Make the image width fit the screen */
-    height: 80% /* Set the image height to 80 pixels */
-     /* Ensure the image covers the entire area without distortion */
+    width: 1750px;
+    height: 750px;
+    /* object-fit: cover; */
 }
 
 .prev, .next {
@@ -105,6 +98,7 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .next {
@@ -122,7 +116,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* .dot {
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -131,7 +125,7 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-} */
+}
 
 .active, .dot:hover {
     background-color: #717171;
@@ -146,7 +140,7 @@ body {
     from {opacity: .4}
     to {opacity: 1}
 }
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 4rem 1rem;
@@ -157,7 +151,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Services Grid */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -189,7 +182,6 @@ body {
     text-decoration: underline;
 }
 
-/* Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -219,7 +211,6 @@ body {
     background: #e66a49;
 }
 
-/* Footer */
 .footer {
     background: var(--primary);
     color: white;
@@ -231,7 +222,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Rotating Portfolio Showcase */
 .portfolio-showcase {
     position: relative;
     height: 300px;
@@ -267,7 +257,6 @@ body {
     color: white;
 }
 
-/* Service Details */
 .service-intro {
     text-align: center;
     padding: 4rem 1rem;
@@ -315,7 +304,6 @@ body {
     color: var(--accent);
 }
 
-/* Call to Action Section */
 .cta-section {
     text-align: center;
     padding: 4rem 1rem;
@@ -328,7 +316,6 @@ body {
     color: var(--primary);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .menu {
         display: none;
@@ -343,7 +330,6 @@ body {
     }
 }
 
-/* Team Section */
 .freelancer-profiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -358,7 +344,6 @@ body {
     text-align: center;
 }
 
-/* Blog Section */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -386,7 +371,6 @@ body {
     text-decoration: underline;
 }
 
-/* Contact Info Section */
 .contact-info {
     padding: 2rem 5%;
     background: var(--light);
@@ -399,4 +383,41 @@ body {
 
 .contact-info p {
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .menu {
+        display: none;
+    }
+    .search-bar {
+        width: 100%;
+    }
+} */
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.header, .footer {
+    padding: 1rem 5%;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.cta-button {
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #0056b3;
 }
